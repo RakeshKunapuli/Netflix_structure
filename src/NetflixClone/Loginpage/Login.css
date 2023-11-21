@@ -1,0 +1,115 @@
+.background{
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/77d35039-751f-4c3e-9c8d-1240c1ca6188/cf244808-d722-428f-80a9-052acdf158ec/IN-en-20231106-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+    background-color: black;
+    object-fit: contain;
+    height: auto;
+    margin-bottom: 0%;
+}
+.loginmaincontainer{
+    background-color:transparent;
+    border: none;
+    /* height: 60px; */
+}
+.logo{
+    margin: 0px 40px;
+    z-index:2;
+    height: 60px;
+    width: 200px;
+}
+h4{
+    margin-bottom: 40px;
+}
+
+
+.signinform{
+    min-width: 450px;
+    width: 450px;
+    height:600px;
+    /* border: 2px solid white; */
+    margin:0px auto;
+    
+    background-color: rgba(0, 0, 0, 0.75);
+  
+}
+.form{
+    /* border: 1px soild yellow; */
+     height: 500px;
+margin: 0px auto;
+padding: 15%; 
+color: white;
+}
+
+    .error{
+        color: chocolate;
+        font-size: 13px;
+        color: #e87c03;
+  margin-bottom: -6px;
+  padding: 6px 3px;
+        
+      }
+ .username,.password{
+    border-radius: 4px;
+    margin:5px auto;
+  font-size: 16px;
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+.inputuser{
+   
+    color: #ccc;
+} 
+.passwordeye{
+    cursor: pointer;
+    color: #f1eded;
+    position: absolute;
+    top: 47%;
+    right: 40%;
+    visibility: hidden;
+}
+.btnn{
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    color: white;
+    margin-top: 40px;
+    border: none;
+    border-radius: 4px;
+}
+.rememberme{
+    display: flex;
+    justify-content: space-between;
+}
+.needhelp{
+    color: white;
+    text-decoration: none;
+}
+.username[type='text'],.username[type='password']{
+    background: #333;
+    border: none;
+    color: white;
+    padding: 0px 15px;
+}
+.username:focus{
+    outline: none;
+    border-bottom: #e87c03;
+}
+.signup{
+    color: white;
+    text-decoration: none;
+}
+.signup:hover{
+    text-decoration: underline;
+}
+
+
+@media (min-width:0px) and (max-width:810px){
+    .loginmaincontainer{
+        background-color: black;
+    }
+    .signinform{
+        background-color:black ;
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,18 @@
+.videocontainer{
+    width: 100%;
+    height: auto;
+    border: 1px solid white;
+    background-color: black;
+    margin-top: 100px;
+
+}
+
+.videowrapper{
+    border: 2px solid yellowgreen;
+    width: calc(25% - 24px);
+    margin: 10px;
+    height: 200px;
+}
+.videowrapper > img{
+    width: 100%;
+}

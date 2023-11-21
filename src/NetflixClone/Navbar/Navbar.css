@@ -1,0 +1,156 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Montserrat:ital,wght@0,300;1,300&family=Noto+Serif&family=Noto+Serif+JP:wght@300&family=Open+Sans&family=Raleway:wght@400;500&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,500&family=Source+Code+Pro&family=Ysabeau+Office:wght@200&display=swap');
+
+
+*{
+  padding: 0;margin: 0;
+}
+
+.maincontainer{
+  border: 1px solid black;
+  background-color: black;
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 25%;
+}
+.navbar{
+   /* border: 1px solid white;  */
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+.nav{
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+ font-family: 'Inconsolata', monospace;
+ padding: 0px 10px;
+}
+.active{
+  border-bottom: 3px solid white;
+}
+
+.search-input{
+  width: 400px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  color: white;text-align: center;
+  font-family: 'Inconsolata', monospace;
+  font-weight: bold;
+}
+
+.search-input::placeholder{
+  color: white;
+  text-align: center;
+}
+.search-input:focus{
+  outline: none;
+}
+
+#logo{
+  background-color: black;
+}
+.logo{
+  width: 10rem;
+  height: auto;
+}
+.userlogo{
+  width: 60px;
+}
+
+.caretdown{
+  color: white;
+  cursor: pointer;
+}
+.userprofile-container {
+  position: relative;
+  top: 0px ;
+  right: 0px;
+}
+
+.userprofile {
+  position: absolute;
+}
+
+
+
+.dropdown {
+  position: absolute;
+  top: 80px; /* Position the dropdown below the userprofile */
+  right: 0;
+  z-index: 10;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.74);
+  display: flex;
+  flex-direction: column;
+
+  font-weight: 600;
+  color: white;
+  transition: ease-in-out;
+}
+
+
+ .logoutbtn{
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+ }
+
+.logoutbtn,
+.accountsbtn {
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Added a hover effect for better user experience */
+.logoutbtn:hover,
+.accountsbtn:hover {
+  background-color: rgba(0, 0, 0, 0.945);
+  color:white;
+}
+
+.fabell{
+  /* border: 2px solid rgba(240, 248, 255, 0.712); */
+  opacity: 1;
+  border-radius: 50px;
+  animation: bell 2s cubic-bezier(0,0.2,0.8,1)  infinite;
+}
+
+@keyframes bell{
+
+100%{
+  transform: rotate(40deg);
+}
+
+50%{
+  transform: rotate(-40deg);
+}
+}
+
+@media (min-width:0px) and (max-width:450px) {
+
+  .navbar{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+  }
+  .navbar-links{
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    background-color: rgba(240, 248, 255, 0.603);
+    color: black;
+    width: 100%;
+    text-align: center;
+  }
+}

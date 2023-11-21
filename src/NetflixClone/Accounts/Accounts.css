@@ -1,0 +1,71 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Montserrat:ital,wght@0,300;1,300&family=Noto+Serif&family=Noto+Serif+JP:wght@300&family=Open+Sans&family=Raleway:wght@400;500&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,500&family=Source+Code+Pro&family=Tienne&family=Ysabeau+Office:wght@200&display=swap');
+
+.acconuts-maincontainer{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+
+}
+.heading{
+    color: aliceblue;
+}
+.profiles{
+    /* border: 1px solid white; */
+    margin: 60px auto;
+    width: 50%;
+}
+.profiles h4{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    color: white;
+}
+.userscontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.users{
+    width: calc(100px - 2px);
+    margin: 10px auto;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    
+}
+.users p{
+    margin: 0;
+}
+
+.users img{
+    width: 100%;
+}
+.addprofile{
+    padding: 38px;
+    background-color: rgba(240, 248, 255, 0.342);
+    border-radius: 50%;
+    color: black;
+    font-weight:900 ;
+}
+.manageprofiles{
+    color: rgba(255, 255, 255, 0.699);
+    width: 20vw;
+    border: 1px solid rgba(255, 255, 255, 0.692);
+    margin: 0px auto;
+}
+.manage{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: 'Inconsolata', monospace;
+}
+.users:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width:960px){
+.userscontainer{
+    flex-wrap: wrap;
+    gap: 10;
+}
+}
